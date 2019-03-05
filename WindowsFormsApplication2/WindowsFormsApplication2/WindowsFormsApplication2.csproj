@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E1EF3CE-831F-4BF2-830A-85E15E33825F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication2</RootNamespace>
+    <AssemblyName>WindowsFormsApplication2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin">
+      <HintPath>..\..\..\项目\CSkin 16.1.14.2\CSkin 4.0\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines.resx">
+      <DependentUpon>Lines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\乐曲6.jpg" />
+    <None Include="Resources\乐曲5.jpg" />
+    <None Include="Resources\乐曲4.jpg" />
+    <None Include="Resources\乐曲3.jpg" />
+    <None Include="Resources\乐曲2.jpg" />
+    <None Include="Resources\乐曲1.jpg" />
+    <None Include="Resources\摩斯电码 %282%29.jpg" />
+    <None Include="Resources\小灯闪烁一次.jpg" />
+    <None Include="Resources\逆时针亮一圈.jpg" />
+    <None Include="Resources\顺时针亮一圈.jpg" />
+    <None Include="Resources\停止灯.jpg" />
+    <None Include="Resources\流水灯.jpg" />
+    <None Include="Resources\亮右转灯.jpg" />
+    <None Include="Resources\亮左转灯.jpg" />
+    <None Include="Resources\倒车灯.jpg" />
+    <None Include="Resources\前进等.jpg" />
+    <None Include="Resources\另存为1.jpg" />
+    <None Include="Resources\另存为.jpg" />
+    <None Include="Resources\无限循环结束.jpg" />
+    <None Include="Resources\无限循环开始.jpg" />
+    <None Include="Resources\循环结束3.jpg" />
+    <None Include="Resources\循环开始31.jpg" />
+    <None Include="Resources\循环结束2.jpg" />
+    <None Include="Resources\循环开始21.jpg" />
+    <None Include="Resources\循环开始3.jpg" />
+    <None Include="Resources\循环开始2.jpg" />
+    <None Include="Resources\循环结束1.jpg" />
+    <None Include="Resources\循环开始11.jpg" />
+    <None Include="Resources\延时.jpg" />
+    <None Include="Resources\秒1.jpg" />
+    <None Include="Resources\持续时间新.jpg" />
+    <None Include="Resources\小车指令新.jpg" />
+    <None Include="Resources\蜂鸣.jpg" />
+    <None Include="Resources\循环开始1.jpg" />
+    <None Include="Resources\右电机转动.jpg" />
+    <None Include="Resources\左电机转动.jpg" />
+    <None Include="Resources\电机反转.jpg" />
+    <None Include="Resources\电机正转.jpg" />
+    <None Include="Resources\电机停转.jpg" />
+    <None Include="Resources\小车慢速右转.jpg" />
+    <None Include="Resources\小车慢速做转.jpg" />
+    <None Include="Resources\小车快速右转.jpg" />
+    <None Include="Resources\小车快速左转.jpg" />
+    <None Include="Resources\stop.jpg" />
+    <None Include="Resources\秒.jpg" />
+    <None Include="Resources\持续时间.jpg" />
+    <None Include="Resources\小车指令.jpg" />
+    <None Include="Resources\导出配置.jpg" />
+    <None Include="Resources\delate.jpg" />
+    <Content Include="Resources\end.jpg" />
+    <Content Include="image\back.jpg" />
+    <Content Include="Bitmap1.bmp" />
+    <Content Include="image\follow.jpg" />
+    <Content Include="image\move.jpg" />
+    <Content Include="image\turnleft.jpg" />
+    <Content Include="image\turnright.jpg" />
+    <None Include="Resources\end1.jpg" />
+    <None Include="Resources\new.jpg" />
+    <None Include="Resources\open.jpg" />
+    <None Include="Resources\save.jpg" />
+    <None Include="Resources\help.jpg" />
+    <Content Include="Resources\start.jpg" />
+    <None Include="Resources\start1.jpg" />
+    <None Include="Resources\follow.jpg" />
+    <None Include="Resources\turnright.jpg" />
+    <None Include="Resources\turnleft.jpg" />
+    <None Include="Resources\back.jpg" />
+    <None Include="Resources\move.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
